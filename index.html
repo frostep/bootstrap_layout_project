@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-main-block d-flex flex-row justify-content-start">
+        <div class="header-logo-main p-3 w-25">
+          <div class="d-inline-block">
+            <img
+              src="/img/sdo_icons/favicon.png"
+              width="60px"
+              height="60px"
+              alt=""
+              class="img-fluid bg-white rounded-circle mb-3"
+            />
+          </div>
+          <div class="d-inline-block ms-3">
+            <h2 class="title-logo text text-white text-capitalize fw-bold">
+              home learn
+            </h2>
+          </div>
+        </div>
+        <nav
+          class="header-main-navigation d-flex flex-row justify-content-between w-75"
+        >
+          <h1 class="text text-dark ms-5 mt-4">Главная</h1>
+          <ul class="row mt-3 me-5">
+            <li class="col mt-2">mes</li>
+            <li class="col mt-2">note</li>
+            <li class="col"><span id="decoration-stick"></span></li>
+            <li class="col text text-nowrap text-capitalize mt-2">
+              home learn
+            </li>
+            <li class="col mt-2"><i id="decoration-arrow-down"></i></li>
+            <li class="col">
+              <a href=""
+                ><img
+                  src="/img/sdo_icons/favicon.png"
+                  alt="icon"
+                  height="40px"
+                  width="40px"
+                  class="bg-white rounded-circle"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="d-flex flex-row">
+        <div class="container-link-list w-25">
+          <nav class="container-navigation">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <img
+                  class="img-fluid"
+                  src="/img/sdo_icons/Онлайн-занятии.png"
+                  alt=""
+                  width="40px"
+                  height="40px"
+                />
+                <a class="text text-light ms-1" href="">Главная</a>
+              </li>
+              <li class="list-group-item">
+                <img
+                  class="img-fluid"
+                  src="/img/sdo_icons/Учебные курсы.png"
+                  width="40px"
+                  height="40px"
+                  alt=""
+                />
+                <a class="text text-light ms-1" href="">Учебные курсы</a>
+              </li>
+              <li class="list-group-item">
+                <img
+                  class="img-fluid"
+                  src="/img/sdo_icons/Треннинги.png"
+                  width="40px"
+                  height="40px"
+                  alt=""
+                />
+                <a class="text text-light ms-1" href="">Тренинги</a>
+              </li>
+              <li class="list-group-item">
+                <img
+                  src="/img/sdo_icons/Проверка д:з.png"
+                  width="40px"
+                  height="40px"
+                  alt=""
+                />
+                <a class="text text-light" href="">Проверка д/з</a>
+              </li>
+              <li class="list-group-item">
+                <a class="text-light" href="">Учебный журнал</a>
+              </li>
+              <li class="list-group-item">
+                <a class="text-light" href="">Виртуальный класс</a>
+              </li>
+              <li class="list-group-item">
+                <a class="text-light" href="">Онлайн занятия</a>
+              </li>
+              <li class="list-group-item">
+                <a class="text-light" href="">Чаты</a>
+              </li>
+              <li class="list-group-item">
+                <a class="text-light" href="">Учебный план</a>
+              </li>
+              <li class="list-group-item">
+                <a class="text-light" href="">Успеваемость студентов</a>
+              </li>
+              <li class="list-group-item">
+                <a class="text-light" href="">Посещение студентов</a>
+              </li>
+              <li class="list-group-item">
+                <a class="text-light" href="">Пользователи</a>
+              </li>
+              <li class="list-group-item">
+                <a class="text-light" href="">Отчеты</a>
+              </li>
+              <li class="list-group-item">
+                <a class="text-light" href="">Мои настройки</a>
+              </li>
+              <li class="list-group-item">
+                <a class="text-light" href="">Модуль Проверка обучение</a>
+              </li>
+              <li class="list-group-item">
+                <a class="text-light" href="">Модуль Интернет-магазин</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container-information w-75">
+          <section
+            class="card card-information my-2 w-50 border rounded-pill offset-2"
+          >
+            <div class="card-body">
+              <h2 class="card-title text-center">Информация</h2>
+              <p class="card-text d-inline-block offset-2">4 курса</p>
+              <p class="card-text d-inline-block ms-4">12 студентов</p>
+              <p class="card-text d-inline-block ms-4">3 группы</p>
+            </div>
+          </section>
+
+          <div class="d-flex flex-row align-items-start">
+            <section class="card card-unchecked w-50 my-2 mx-3">
+              <div class="card-body">
+                <h2 class="card-title text-center">Непроверенные задания!</h2>
+                <p class="card-text d-inline-block">
+                  1 задание требует проверки
+                </p>
+                <button
+                  id="show-all-exercises"
+                  class="btn btn-warning rounded-pill ms-4 btn-lg"
+                >
+                  Показать все задания
+                </button>
+              </div>
+              <table
+                class="table table-borderless table-hover list-group list-group-flush"
+              >
+                <tr class="">
+                  <th class="text-nowrap">Н/п</th>
+                  <th>Задание</th>
+                  <th>Курс</th>
+                  <th>Студент</th>
+                  <th class="text-nowrap">Группа (МПО)</th>
+                  <th class="text-nowrap">Дата отправки</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td class="text-nowrap">Задание 1</td>
+                  <td class="">Работа в Home Learn</td>
+                  <td class="text-nowrap">Иван Иванов</td>
+                  <td>Тест 2020/21</td>
+                  <td>23.03.2020</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Задание 1</td>
+                  <td>Работа в Home Learn</td>
+                  <td>Иван Иванов</td>
+                  <td>Тест 2020/21</td>
+                  <td>23.03.2020</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Задание 1</td>
+                  <td>Работа в Home Learn</td>
+                  <td>Иван Иванов</td>
+                  <td>Тест 2020/21</td>
+                  <td>23.03.2020</td>
+                </tr>
+              </table>
+            </section>
+
+            <section class="card popular-courses w-50 my-2 mx-2">
+              <div class="card-body">
+                <h2 class="card-title text-center">Популярные курсы</h2>
+              </div>
+              <table
+                class="table table-borderless table-hover table-sm list-group list-group-flush"
+              >
+                <tr class="">
+                  <th class="text-nowrap text-center">Н/п</th>
+                  <th class="text-nowrap text-center">Курс</th>
+                  <th class="text-center text-nowrap">
+                    Кол-во студентов записано
+                  </th>
+                  <th class="text-nowrap">Кол-во студент.активных</th>
+                </tr>
+
+                <tr>
+                  <td class="text-center">1</td>
+                  <td class="text-nowrap">Работа в Home Learn</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">9</td>
+                </tr>
+
+                <tr>
+                  <td class="text-center">1</td>
+                  <td class="text-nowrap">Работа в Home Learn</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">9</td>
+                </tr>
+
+                <tr>
+                  <td class="text-center">1</td>
+                  <td class="text-nowrap">Работа в Home Learn</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">9</td>
+                </tr>
+
+                <tr>
+                  <td class="text-center">1</td>
+                  <td class="text-nowrap">Работа в Home Learn</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">9</td>
+                </tr>
+
+                <tr>
+                  <td class="text-center">1</td>
+                  <td class="text-nowrap">Работа в Home Learn</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">9</td>
+                </tr>
+              </table>
+            </section>
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <section class="card card-shedule w-50 my-2 mx-3">
+              <div class="card-body">
+                <h2 class="card-title text-center">
+                  Мое расписание на сегодня
+                </h2>
+                <p class="card-text d-inline-block me-5">
+                  Сегодня у меня 3 урока
+                </p>
+                <button
+                  id="show-all-exercises"
+                  class="btn btn-warning rounded-pill ms-5 btn-lg"
+                >
+                  Показать весь журнал
+                </button>
+              </div>
+              <table
+                class="table table-borderless table-hover list-group list-group-flush"
+              >
+                <tr class="">
+                  <th class="text-nowrap">Н/п</th>
+                  <th class="text-center">Предмет</th>
+                  <th class="text-center">Студент</th>
+                  <th class="text-nowrap">Группа (МПО)</th>
+                  <th class="text-nowrap">Время урока</th>
+                </tr>
+
+                <tr>
+                  <td>1</td>
+                  <td class="text-center">Создание курсов в Home Learn</td>
+                  <td class="text-center text-nowrap">Иван Иванов</td>
+                  <td class="text-center">Тест 2020/21</td>
+                  <td class="text-center">11:00</td>
+                </tr>
+
+                <tr>
+                  <td>1</td>
+                  <td class="text-center">Создание курсов в Home Learn</td>
+                  <td class="text-center text-nowrap">Иван Иванов</td>
+                  <td class="text-center">Тест 2020/21</td>
+                  <td class="text-center">11:00</td>
+                </tr>
+
+                <tr>
+                  <td>1</td>
+                  <td class="text-center">Создание курсов в Home Learn</td>
+                  <td class="text-center text-nowrap">Иван Иванов</td>
+                  <td class="text-center">Тест 2020/21</td>
+                  <td class="text-center">11:00</td>
+                </tr>
+              </table>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
